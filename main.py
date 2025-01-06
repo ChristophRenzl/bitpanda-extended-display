@@ -200,7 +200,7 @@ def get_fiat_history(api_key):
             # Filter and append only items with type 'deposit'
             deposit_data = [
                 item for item in data.get("data", [])
-                if item.get("attributes", {}).get("type") == "deposit"
+                if item.get("attributes", {}).get("type") == "deposit" and item.get("attributes", {}).get("status") != "canceled"
             ]
             fiat_data.extend(deposit_data)
 
