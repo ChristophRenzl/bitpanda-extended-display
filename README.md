@@ -2,7 +2,7 @@
 this project shall make it easy to see the all time spent value and compare it with the current profile overall value
 
 ### Known bugs
-- Only Crypto values are being fetched from bitpanda api, so only current crypto assets are displayed
+- if asset single Eur Value is < 0.01 it is assumed to be 0, bitpanda api error
 - Cryptocurrencies which are staked, are count as not owned (0 value owned), bitpanda api error
 
 ### next features
